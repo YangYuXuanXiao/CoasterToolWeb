@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-Hans" data-language="zh-Hans" data-page="privacy.html">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Coaster Tool — 隐私政策</title>
+    <meta name="description" content="Coaster Tool 的运动、位置、照片、心率、备份及分享数据政策。">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="alternate" hreflang="zh-Hans" href="../zh-Hans/privacy.html">
+    <link rel="alternate" hreflang="zh-Hant" href="../zh-Hant/privacy.html">
+    <link rel="alternate" hreflang="en" href="../en/privacy.html">
+    <link rel="alternate" hreflang="fr" href="../fr/privacy.html">
+    <link rel="alternate" hreflang="x-default" href="../privacy.html">
+    <script src="../language.js" defer></script>
+</head>
+<body>
+<main>
+    <nav aria-label="网站导航">
+        <strong>Coaster Tool</strong>
+        <a href="index.html">技术支持</a>
+        <a href="privacy.html" aria-current="page">隐私政策</a>
+    </nav>
+    <nav class="language-switcher" aria-label="选择语言">
+        <a href="../zh-Hans/privacy.html" lang="zh-Hans" hreflang="zh-Hans" data-language-link="zh-Hans" aria-current="true">简体中文</a>
+        <a href="../zh-Hant/privacy.html" lang="zh-Hant" hreflang="zh-Hant" data-language-link="zh-Hant">繁體中文</a>
+        <a href="../en/privacy.html" lang="en" hreflang="en" data-language-link="en">English</a>
+        <a href="../fr/privacy.html" lang="fr" hreflang="fr" data-language-link="fr">Français</a>
+        <button type="button" data-auto-language hidden>跟随浏览器语言</button>
+    </nav>
+    <h1>隐私政策</h1>
+    <h2>关于本政策</h2>
+    <p>更新于 2026 年 9 月 10 日。开发者：Yangyuxuan,Xiao。Coaster Tool 无需应用账号，用于乘坐记录与个人身体反应回顾，不提供诊断或安全评估。</p>
+    <h2>设备上处理的数据</h2>
+    <p>应用在设备上处理运动数据、可选 GPS 精确位置、时间、名称、乐园、座位、备注、收藏、设置及选中的照片。仅复制系统照片选择器中选中的图片，移除副本的原始 EXIF/GPS 信息，不修改照片库原件。</p>
+    <h2>心率与健康数据</h2>
+    <p>心率默认关闭。经健康读取授权后，应用读取录制期间可用的心率及时间，用于趋势、样本统计与身体反应回顾。不会启动体能训练、写入健康或保证持续采样。心率不用于广告、营销、用户画像或研究，不出售健康数据。</p>
+    <h2>Watch 同步与备份</h2>
+    <p>Watch 记录（包括已授权采集的心率）通过 WatchConnectivity 传至配对 iPhone。记录、配图、Watch 文件与收件箱排除系统设备备份。App 内手动或自动 iCloud 备份上传非心率数据到个人 CloudKit 私有数据库。自动备份默认关闭，关闭或切换账号会停止后续自动备份。</p>
+    <p>云端备份包含原始运动与 GPS、校准、分析范围、记录信息和配图，排除心率及其统计。由于本机记录目录排除系统备份，迁移或重装前，请自行备份需要保留的数据。心率不会随 App 内 iCloud 恢复回来。删除既有云端数据前请先关闭自动备份。</p>
+    <h2>你控制的导出与分享</h2>
+    <p>分享由你发起。PNG、CSV 和四数组 JSON 不含心率或 GPS 坐标。传感器记录 JSON 包含精确定位与备注，默认排除心率；只有明确开启“在 JSON 中包含心率”后才包含心率。分享内容交给你选择的应用或接收者，由你管理导出副本。</p>
+    <h2>保留与删除</h2>
+    <p>本地记录保留至你删除；删除 iPhone 记录及配图不会删除 Watch 原始文件、云端版本或导出副本。同步成功不自动删除 Watch 文件。关闭备份不删除已有云端数据。为防止迟到同步恢复已删除记录，本机保留记录标识与摘要。云端数据可通过系统 iCloud 存储管理删除；删除 Watch App 会移除其本地数据。</p>
+    <h2>权限与撤回</h2>
+    <p>可在系统设置调整运动、定位权限，在健康 App 或系统健康权限中撤回心率读取。关闭心率开关仅影响下次录制；撤权或停止采集不会删除已有副本，可删除对应记录。健康读取未获授权时，运动录制仍可使用。拒绝定位仍可前台采集；Watch 在无定位授权时进入后台会结束录制。</p>
+    <h2>服务提供方</h2>
+    <p>开发者不运行收集乘坐记录的服务器，应用不含广告、第三方分析 SDK 或跨应用跟踪。MapKit 和 iCloud 由 Apple 提供。网站由 GitHub Pages 托管，GitHub 可能处理 IP 等请求信息；网站没有分析脚本或追踪 Cookie。Apple 与 GitHub 的隐私声明可在网页版政策查看。</p>
+    <h2>联系与更新</h2>
+    <p>隐私问题可通过开发者支持页的 GitHub Issues 联系开发者。该入口公开，请勿提交心率、精确位置、私人照片或原始记录；开发者无法读取你的个人 CloudKit 数据。政策变化会更新日期。</p>
+    <p><a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a> · <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a></p>
+    <p><a href="https://github.com/YangYuXuanXiao/CoasterToolWeb/issues">联系开发者（公开反馈）</a></p>
+    <footer>© 2026 Yangyuxuan,Xiao · Coaster Tool<br><a href="privacy.html">隐私政策</a></footer>
+</main>
+</body>
+</html>

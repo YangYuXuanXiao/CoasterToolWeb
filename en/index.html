@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en" data-language="en" data-page="index.html">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Coaster Tool — Support</title>
+    <meta name="description" content="Coaster Tool help, heart rate reflection, technical support and data privacy information.">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="alternate" hreflang="zh-Hans" href="../zh-Hans/index.html">
+    <link rel="alternate" hreflang="zh-Hant" href="../zh-Hant/index.html">
+    <link rel="alternate" hreflang="en" href="../en/index.html">
+    <link rel="alternate" hreflang="fr" href="../fr/index.html">
+    <link rel="alternate" hreflang="x-default" href="../index.html">
+    <script src="../language.js" defer></script>
+</head>
+<body>
+<main>
+    <nav aria-label="Site navigation">
+        <strong>Coaster Tool</strong>
+        <a href="index.html" aria-current="page">Support</a>
+        <a href="privacy.html">Privacy Policy</a>
+    </nav>
+    <nav class="language-switcher" aria-label="Choose language">
+        <a href="../zh-Hans/index.html" lang="zh-Hans" hreflang="zh-Hans" data-language-link="zh-Hans">简体中文</a>
+        <a href="../zh-Hant/index.html" lang="zh-Hant" hreflang="zh-Hant" data-language-link="zh-Hant">繁體中文</a>
+        <a href="../en/index.html" lang="en" hreflang="en" data-language-link="en" aria-current="true">English</a>
+        <a href="../fr/index.html" lang="fr" hreflang="fr" data-language-link="fr">Français</a>
+        <button type="button" data-auto-language hidden>Use browser language</button>
+    </nav>
+    <h1>Record rides. Reflect on your physical response.</h1>
+    <p>Coaster Tool records roller coaster motion on iPhone and Apple Watch and supports personal heart rate and physical-response reflection. Review force charts, calibration, replay, comparisons and estimated 2D/3D tracks.</p>
+    <h2>Need help?</h2>
+    <p>Open a GitHub issue below with device, OS, app version and reproduction steps. Issues are public: do not upload heart rate, precise locations, private photos or full recordings.</p>
+    <p><a href="https://github.com/YangYuXuanXiao/CoasterToolWeb/issues">Contact developer (public issues)</a></p>
+    <h2>Start recording</h2>
+    <p>Motion permission is needed; location is optional. iPhone recording stops and saves on entering the background. With location permission, Watch can continue in the background, though system scheduling may create gaps. The limit is 20 minutes.</p>
+    <h2>Heart rate and physical response</h2>
+    <p>Enable heart rate capture on the recording device and allow Health read access for the next recording. Results and Details show samples in the analysis range, their average, lowest and highest values and peak-sample time. Drag the chart to inspect actual samples, then use ride notes to reflect on how you felt. This supports personal health awareness without inferring stress, excitement or safety.</p>
+    <h2>No heart rate samples?</h2>
+    <p>The app reads available samples from Health during recording. It starts no workout and does not control sensor frequency. Permission, sampling or iPhone synchronization may leave no samples; motion recording still works. Missing values are not interpolated, and the sample average is not the average for the whole ride.</p>
+    <h2>Explore without a real recording</h2>
+    <p>In History, load a demo ride and open its details. Motion, heart rate and tracks are clearly marked synthetic examples. Demo data does not come from or get written to Health.</p>
+    <h2>Calibration and limitations</h2>
+    <p>Choose the analysis range and calibration in Curve Range &amp; Calibration. Inertial estimates drift and readings depend on movement and fit. The app offers no diagnosis, abnormality alerts, safety certification or professional engineering measurements.</p>
+    <h2>Transfers, backups and exports</h2>
+    <p>Watch transfers include authorized heart rate samples and go to the paired iPhone. Automatic iCloud backup is off by default. In-app iCloud backup excludes heart rate; local recordings, photos, Watch files and the inbox are excluded from system device backups. PNG, CSV and four-array JSON omit heart rate and GPS coordinates. Recording JSON includes locations and notes, and heart rate only if you explicitly enable it on the share screen. Each new share screen starts with heart rate excluded.</p>
+    <h2>Managing copies</h2>
+    <p>Deleting an iPhone record does not delete Watch originals, cloud versions or exports. Deleting the Watch app removes its local data. Turn off automatic backup before deleting cloud data in system iCloud storage management. Save any needed records before migrating or reinstalling; in-app iCloud restore does not recover heart rate.</p>
+    <p>Follow ride rules, secure your device and start recording before boarding. Do not operate it during the ride. Measurements cannot determine whether a ride is safe.</p>
+    <p>For personal health awareness and reflection on physical responses, not diagnosis, abnormality alerts or ride-safety advice. Consult a doctor before making medical decisions.</p>
+    <footer>© 2026 Yangyuxuan,Xiao · Coaster Tool<br><a href="privacy.html">Privacy Policy</a></footer>
+</main>
+</body>
+</html>
