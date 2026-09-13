@@ -2,6 +2,15 @@
 
 Static support and privacy pages for GitHub Pages. No build step or dependencies.
 
+Content reviewed on 2026-09-13 against CoasterTool commit `22e79b1`
+(2026-09-12). All four languages cover recording with the screen locked,
+per-device stop confirmation, immediate heart-rate permission requests,
+automatic range trimming, display-only curve smoothing, and range-based track
+recalculation. Support and privacy pages reflect the removal of iCloud backup
+and restore, local export requirements, and browser language-preference storage.
+Check current app behavior and localization strings as well as its README and
+`Website/` pages when updating content; those pages can lag behind implementation.
+
 | Language | Support | Privacy |
 | --- | --- | --- |
 | 简体中文 | `zh-Hans/index.html` | `zh-Hans/privacy.html` |
