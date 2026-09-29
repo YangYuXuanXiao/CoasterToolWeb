@@ -13,15 +13,49 @@ localization strings and these App repository documents:
   backup purchase or purchase restoration. Restoring records still requires enough
   local recording capacity. Capacity purchases do not provide iCloud storage.
 - `docs/USER-GUIDE.md`, `docs/WATCH.md` and `docs/FORCE-JSON.md`: recording and
-  HealthKit limits, confirmed Watch transfers, calibration, barometer data,
+  limits, confirmed Watch transfers, calibration, barometer data,
   four-array imports and export choices.
 
-New snapshots exclude heart rate and all notes. Note drafts use local storage
+New snapshots exclude all notes. Note drafts use local storage
 excluded from system backups; ordinary preferences may still be backed up. Older
 supported snapshots may contain notes and are not rewritten or deleted
 automatically. Manual restore can recover older notes, but creating another
-snapshot excludes them. Recording JSON exports keep notes; heart rate requires
-an explicit choice each time the share screen is opened.
+snapshot excludes them. Recording JSON exports keep notes.
+
+Snapshots keep all saved recordings and their complete raw samples, including
+GPS outside the selected analysis range. Opening the backup page lists existing
+snapshots; it does not create a new one. Watch records must first be saved on
+iPhone. A lack of recording slots prevents the entire restore batch from adding
+records; a later disk write failure can leave some records restored, and retrying
+skips those records. Current backup exclusions do not retroactively clean older
+system device backups, which may contain note drafts.
+
+Purchase restoration restores capacity entitlements, not recordings or photos.
+The App Store and iCloud accounts can differ. StoreKit checks entitlements at
+launch, foreground entry and transaction updates; an explicit Restore purchases
+action starts purchase restoration. Pending approval does not unlock capacity.
+Apple handles payment and retains transaction records under its own policy, and
+may provide developer purchase/refund reports that do not identify the buyer.
+Both support and privacy pages link to Apple's standard EULA and iCloud privacy
+information; support also links to Apple's refund instructions.
+
+For future updates, verify these boundaries against the implementation under
+`Packages/CoasterKit/Sources/CoasterKit/` in the App repository:
+
+- `Infrastructure/Purchases/RecordPurchaseClient.swift` and
+  `Controllers/RecordPurchaseController.swift`: verified entitlements, explicit
+  restoration, pending purchases, transaction updates and refunds.
+- `Models/Backup/RideBackup.swift` and `Models/Backup/RideStore+Backup.swift`:
+  excluded fields, complete samples, archive limits and partial disk failures.
+- `Controllers/CloudBackupController.swift` and
+  `Infrastructure/Cloud/ICloudBackupRepository.swift`: user-initiated snapshots,
+  upload/download status and account-change handling.
+
+Use official Apple references for service behavior outside the app:
+[App Store & Privacy](https://www.apple.com/legal/privacy/data/en/app-store/),
+[Apple Account & iCloud privacy](https://www.apple.com/legal/privacy/data/en/apple-id/),
+[standard EULA](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/)
+and [refund instructions](https://support.apple.com/en-us/118223).
 
 Tracks require full calibration, a geographic heading and accepted GPS in each
 continuous motion-data segment; there is no inertial-only or GPS-only fallback.
