@@ -2,6 +2,14 @@
 
 Static support and privacy pages for GitHub Pages. No build step or dependencies.
 
+Support and privacy inquiries can be sent through public
+[GitHub Issues](https://github.com/YangYuXuanXiao/CoasterToolWeb/issues) or by email to
+[xiaoyangyuxuan@126.com](mailto:xiaoyangyuxuan@126.com). App issue reports should
+include the device model, iOS/watchOS version, app version, problem description,
+expected and actual results, and specific steps to reproduce the issue. Do not
+include precise locations, private photos, or complete/raw recordings in either
+channel.
+
 Keep all six languages aligned with the current CoasterTool implementation,
 localization strings and these App repository documents:
 

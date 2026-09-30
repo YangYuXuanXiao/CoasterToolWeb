@@ -157,7 +157,7 @@ test("every page has valid local links, language alternatives and static content
                 assert.ok(html.includes(`rel="alternate" hreflang="${language}" href="${locale ? "../" : ""}${language}/${page}"`), filename);
             }
             for (const [, href] of html.matchAll(/(?:href|src)="([^"]+)"/g)) {
-                if (/^https?:/.test(href)) continue;
+                if (/^(?:https?|mailto):/.test(href)) continue;
                 assert.ok(fs.existsSync(path.resolve(path.dirname(filename), href)), `${filename}: ${href}`);
             }
             if (locale) {
@@ -187,7 +187,7 @@ test("automatic mode can leave an RTL page for Japanese and preserves the URL su
 test("Arabic and Japanese retain every support/privacy section and external reference", () => {
     for (const page of ["index.html", "privacy.html"]) {
         const reference = fs.readFileSync(path.join(root, "en", page), "utf8");
-        const externalLinks = html => [...html.matchAll(/href="(https?:[^"]+)"/g)].map(match => match[1]).sort();
+        const externalLinks = html => [...html.matchAll(/href="((?:https?|mailto):[^"]+)"/g)].map(match => match[1]).sort();
         for (const locale of ["ar", "ja"]) {
             const html = fs.readFileSync(path.join(root, locale, page), "utf8");
             for (const tag of ["h1", "h2", "p"]) {
