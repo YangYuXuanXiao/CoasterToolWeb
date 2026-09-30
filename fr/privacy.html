@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-language="fr" data-page="privacy.html">
+<html lang="fr" data-language="fr" data-page="privacy.html" dir="ltr">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -10,6 +10,8 @@
     <link rel="alternate" hreflang="zh-Hant" href="../zh-Hant/privacy.html">
     <link rel="alternate" hreflang="en" href="../en/privacy.html">
     <link rel="alternate" hreflang="fr" href="../fr/privacy.html">
+    <link rel="alternate" hreflang="ja" href="../ja/privacy.html">
+    <link rel="alternate" hreflang="ar" href="../ar/privacy.html">
     <link rel="alternate" hreflang="x-default" href="../privacy.html">
     <script src="../language.js" defer></script>
 </head>
@@ -21,10 +23,12 @@
         <a href="privacy.html" aria-current="page">Politique de confidentialité</a>
     </nav>
     <nav class="language-switcher" aria-label="Choisir la langue">
-        <a href="../zh-Hans/privacy.html" lang="zh-Hans" hreflang="zh-Hans" data-language-link="zh-Hans">简体中文</a>
-        <a href="../zh-Hant/privacy.html" lang="zh-Hant" hreflang="zh-Hant" data-language-link="zh-Hant">繁體中文</a>
-        <a href="../en/privacy.html" lang="en" hreflang="en" data-language-link="en">English</a>
-        <a href="../fr/privacy.html" lang="fr" hreflang="fr" data-language-link="fr" aria-current="true">Français</a>
+        <a href="../zh-Hans/privacy.html" lang="zh-Hans" hreflang="zh-Hans" data-language-link="zh-Hans" dir="ltr">简体中文</a>
+        <a href="../zh-Hant/privacy.html" lang="zh-Hant" hreflang="zh-Hant" data-language-link="zh-Hant" dir="ltr">繁體中文</a>
+        <a href="../en/privacy.html" lang="en" hreflang="en" data-language-link="en" dir="ltr">English</a>
+        <a href="../fr/privacy.html" lang="fr" hreflang="fr" data-language-link="fr" aria-current="true" dir="ltr">Français</a>
+        <a href="../ja/privacy.html" lang="ja" hreflang="ja" data-language-link="ja" dir="ltr">日本語</a>
+        <a href="../ar/privacy.html" lang="ar" hreflang="ar" data-language-link="ar" dir="rtl">العربية</a>
         <button type="button" data-auto-language hidden>Utiliser la langue du navigateur</button>
     </nav>
     <h1>Politique de confidentialité</h1>
@@ -33,10 +37,10 @@
     <h2>Données traitées sur l’appareil</h2>
     <p>L’app traite sur l’appareil les mouvements, mesures disponibles de pression et d’altitude relative, positions GPS précises facultatives, dates, noms, parcs, places, notes, favoris, réglages et photos choisies. Seules les photos sélectionnées via le sélecteur système sont copiées. Les métadonnées EXIF/GPS originales sont retirées des copies, sans modifier les originaux. Les brouillons de notes sont conservés séparément dans un dossier local exclu des sauvegardes système. Lors de la mise à jour, la copie des anciennes préférences est retirée uniquement après un enregistrement réussi dans ce dossier. En cas d’échec, l’original est conservé et une nouvelle tentative est proposée. Les réglages ordinaires et les brouillons de nom, parc et place peuvent être inclus dans les sauvegardes système.</p>
     <h2>Transferts Watch et stockage local</h2>
-    <p>Les enregistrements Watch sont transférés à l’iPhone jumelé via WatchConnectivity. Enregistrements locaux, photos, originaux Watch, boîte de réception et brouillons de notes sont exclus des sauvegardes système ; les préférences ordinaires peuvent être sauvegardées. Avant une migration ou une réinstallation, créez manuellement une copie iCloud sans notes, ou exportez les enregistrements à conserver. Le JSON garde les notes ; les photos doivent être conservées séparément.</p>
+    <p>Les enregistrements Watch sont transférés à l’iPhone jumelé via WatchConnectivity. Enregistrements locaux, photos, originaux Watch, boîte de réception et brouillons de notes sont exclus des sauvegardes système ; les préférences ordinaires peuvent être sauvegardées. Avant une migration ou une réinstallation, créez manuellement une copie iCloud sans notes, ou exportez les enregistrements à conserver. Le JSON de l’enregistrement conserve les notes ; les photos doivent être conservées séparément.</p>
     <h2>Sauvegarde et restauration manuelles dans iCloud</h2>
     <p>La sauvegarde et la restauration manuelles iCloud sont gratuites, sans achat ni restauration d’achat. L’app crée une copie indépendante des enregistrements déjà sauvegardés sur cet iPhone et l’enregistre dans le compte iCloud actuel uniquement lorsque vous touchez « Sauvegarder dans iCloud ». Acheter de la capacité, restaurer un achat ou ouvrir la page n’envoie pas automatiquement les enregistrements. Il ne s’agit ni d’une sauvegarde automatique ni d’une synchronisation bidirectionnelle.</p>
-    <p>Les nouvelles copies contiennent les mouvements bruts, pression et altitude relative, positions GPS précises, dates, noms des attractions, parcs, places, forces des quatre canaux, étalonnages, plages d’analyse, favoris et photos. Elles conservent les identifiants et empreintes de provenance Watch servant à éviter les doublons. Toutes les notes, réglages, enregistrements Watch non synchronisés, originaux Watch et boîte de réception sont exclus. Les notes locales restent, mais ne peuvent pas être récupérées depuis les nouvelles copies. Les exports JSON que vous lancez conservent les notes.</p>
+    <p>Les nouvelles copies contiennent les mouvements bruts, pression et altitude relative, positions GPS précises, dates, noms des attractions, parcs, places, forces des quatre canaux, étalonnages, plages d’analyse, favoris et photos. Elles conservent les identifiants et empreintes de provenance Watch servant à éviter les doublons. Toutes les notes, réglages, enregistrements Watch non synchronisés, originaux Watch et boîte de réception sont exclus. Les notes locales restent, mais ne peuvent pas être récupérées depuis les nouvelles copies. Les exports JSON d’enregistrements que vous lancez contiennent toujours les notes.</p>
     <p>Les sauvegardes utilisent votre espace iCloud Drive ; Apple fournit le stockage et le transfert. Le développeur ne peut pas accéder à votre iCloud Drive. Vous devez être connecté à iCloud, activer iCloud Drive et disposer d’espace libre. Le système planifie les envois : une écriture dans le dossier local iCloud Drive ne confirme pas la fin du transfert. Vérifiez l’état iCloud avant de changer d’appareil ou de désinstaller l’app.</p>
     <p>Vous choisissez et confirmez une copie à restaurer. L’app ajoute uniquement les enregistrements absents et non supprimés sur cet appareil, en conservant les modifications existantes. Les copies non prises en charge ou endommagées ne sont pas importées, et les originaux restent dans iCloud. Un changement de compte iCloud efface la liste affichée ; les résultats de l’opération précédente ne sont pas enregistrés localement.</p>
     <p>La restauration reste soumise à la capacité locale. Si l’espace ne suffit pas pour tous les enregistrements à ajouter, l’app n’en ajoute aucun. Vous pouvez libérer de la place ou augmenter la capacité, puis réessayer ; la copie iCloud reste inchangée.</p>
@@ -44,7 +48,7 @@
     <h2>Achats intégrés et restauration des achats</h2>
     <p>La capacité locale gratuite est de 50 enregistrements. Les achats intégrés Apple permettent de porter le total à 100 ou à un nombre illimité d’enregistrements. Ces achats sont uniques et non consommables, sans abonnement ; les prix sont affichés par l’App Store. Chaque niveau est facturé séparément, au prix intégral affiché, sans déduction des achats précédents. La sauvegarde et la restauration iCloud sont gratuites. L’achat de capacité n’ajoute pas d’espace iCloud et ne modifie ni la durée maximale d’enregistrement ni les limites de taille des fichiers.</p>
     <p>Apple traite le paiement. Sur votre appareil, l’app utilise les informations produit de StoreKit, les identifiants des transactions et des produits, ainsi que l’état des achats ou révocations pour vérifier les droits de capacité ; le niveau valide le plus élevé s’applique. Les droits sont vérifiés au lancement, au retour au premier plan et lors des mises à jour des transactions. Seul un appui sur « Restaurer les achats » lance la procédure de restauration, qui peut demander l’authentification du compte App Store. Cela n’envoie au développeur ni trajets, ni positions, ni photos. Le développeur ne reçoit ni coordonnées de carte bancaire ni mot de passe du compte Apple et n’exploite aucun serveur recevant les transactions.</p>
-    <p>Apple traite séparément les données de compte, de paiement et d’achat et peut fournir au développeur des rapports d’achats et de remboursements sans identification personnelle. Supprimer l’app n’efface pas les transactions conservées par Apple. Voir <a href="https://www.apple.com/legal/privacy/data/en/app-store/">App Store et confidentialité</a>.</p>
+    <p>Apple traite séparément les données de compte, de paiement et d’achat et peut fournir au développeur des rapports d’achats et de remboursements ne permettant pas de vous identifier directement. Supprimer l’app n’efface pas les transactions conservées par Apple. Voir <a href="https://www.apple.com/legal/privacy/data/en/app-store/">App Store et confidentialité</a>.</p>
     <p>Utilisez « Restaurer les achats » sur l’écran d’achat Espace des enregistrements. Les droits suivent le compte App Store utilisé pour l’achat ; les sauvegardes suivent le compte iCloud actuel. Ces comptes peuvent être différents. Restaurer les achats n’envoie pas automatiquement les enregistrements et ne restaure pas les sauvegardes. Après un remboursement ou une révocation, la capacité revient au niveau encore valide ou aux 50 enregistrements gratuits ; les enregistrements locaux et copies iCloud sont conservés. Les enregistrements existants restent consultables, modifiables, exportables et supprimables ; les nouveaux doivent respecter la capacité actuelle.</p>
     <p>Consultez le <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">contrat de licence utilisateur final standard d’Apple (EULA)</a> pour les conditions d’utilisation de l’app, et les <a href="https://www.apple.com/legal/privacy/data/en/apple-id/">informations de confidentialité du compte Apple et d’iCloud</a> pour le traitement des données du service iCloud.</p>
     <h2>Exports et partage sous votre contrôle</h2>

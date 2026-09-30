@@ -1,5 +1,5 @@
 (() => {
-    const languages = ["zh-Hans", "zh-Hant", "en", "fr"];
+    const languages = ["zh-Hans", "zh-Hant", "en", "fr", "ja", "ar"];
     const storageKey = "coaster-tool-language";
     const root = document.documentElement;
     const page = root.dataset.page;
@@ -17,7 +17,7 @@
                 if (subtags.includes("hans")) return "zh-Hans";
                 return subtags.some(part => ["tw", "hk", "mo"].includes(part)) ? "zh-Hant" : "zh-Hans";
             }
-            if (base === "en" || base === "fr") return base;
+            if (languages.includes(base)) return base;
         }
 
         return "en";

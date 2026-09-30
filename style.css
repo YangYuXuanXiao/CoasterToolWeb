@@ -64,6 +64,7 @@ button:focus-visible {
 
 a {
     color: var(--accent);
+    overflow-wrap: anywhere;
     text-underline-offset: 4px
 }
 
@@ -72,6 +73,17 @@ h1 {
     line-height: 1.15;
     letter-spacing: -1.5px;
     margin: 42px 0 16px
+}
+
+/* Arabic joining and Japanese line boxes need natural spacing in large headings. */
+html:lang(ar) h1,
+html:lang(ja) h1 {
+    letter-spacing: normal;
+    line-height: 1.4
+}
+
+bdi {
+    overflow-wrap: anywhere
 }
 
 h2 {

@@ -2,7 +2,7 @@
 
 Static support and privacy pages for GitHub Pages. No build step or dependencies.
 
-Keep all four languages aligned with the current CoasterTool implementation,
+Keep all six languages aligned with the current CoasterTool implementation,
 localization strings and these App repository documents:
 
 - `docs/RECORD-CAPACITY.md`: 50 free local recordings, optional one-time purchases
@@ -74,12 +74,16 @@ these files does not change either service.
 | 繁體中文 | `zh-Hant/index.html` | `zh-Hant/privacy.html` |
 | English | `en/index.html` | `en/privacy.html` |
 | Français | `fr/index.html` | `fr/privacy.html` |
+| 日本語 | `ja/index.html` | `ja/privacy.html` |
+| العربية | `ar/index.html` | `ar/privacy.html` |
 
 The original `index.html` and `privacy.html` URLs remain language-neutral entry
 pages. They use the saved manual language choice first, then the browser's ordered
 language preferences, and fall back to English. Chinese script tags take priority;
 `zh-TW`, `zh-HK`, and `zh-MO` select Traditional Chinese, and other Chinese locales
-select Simplified Chinese.
+select Simplified Chinese. Japanese regional tags such as `ja-JP` select `ja`;
+Arabic tags such as `ar-SA` and `ar-EG` select `ar`. The first supported language
+in the browser preference list wins after any saved manual choice.
 
 Every localized page has ordinary language links that work without JavaScript.
 With JavaScript enabled, a manual choice is saved in local storage when available.
@@ -87,6 +91,17 @@ The automatic-language button clears that choice and uses browser preferences.
 Explicit language URLs always display the requested language. Support/privacy
 navigation stays in that language. Entry redirects preserve the query and fragment
 and work under a GitHub Pages repository subpath.
+
+Arabic pages declare `lang="ar"` and `dir="rtl"` in the static HTML, so headings,
+text and flex navigation flow right to left even without JavaScript. All other
+pages declare LTR; switching languages loads the matching document and direction.
+Each language link has its own direction, and mixed-direction product names and
+file paths use `bdi` where needed. Arabic and Japanese headings use natural letter
+spacing. Page metadata, language alternatives, support/privacy links and the
+no-JavaScript entry choices cover all six languages.
+
+Translations preserve the existing policy date and meaning; adding a language
+does not change the app permissions, purchase terms or data handling.
 
 To preview locally, run `python3 -m http.server 8000` and open
 `http://localhost:8000/`. Run routing and page-integrity checks with
